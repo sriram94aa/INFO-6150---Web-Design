@@ -1,0 +1,22 @@
+{
+  "name": "assignment-7-sriram94aa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"node-sass scss/main.scss --output googleSheets/dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2020/assignment-7-sriram94aa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-sriram94aa/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-sriram94aa#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
