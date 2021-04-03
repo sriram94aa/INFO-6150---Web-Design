@@ -1,0 +1,217 @@
+/* Common Style for overall Page*/
+* {
+    font-family: Tahoma;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #272727;
+    color: #fff;
+    background-image: url('/images/toDoList.jpg');
+    background-position-x: center;
+    background-repeat: round;
+  }
+  .wrapper {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  /* Header Div with Calendar Background*/
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-image: url('/images/calendar.png');
+    background-size: 50px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    background-position-x: 20px;
+  }
+
+  .add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    color: #272727;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .add-task input {
+    border: 0;
+    border-bottom: 1px solid #272727;
+    outline: auto;text-align: center
+  }
+  .increaseWidth{
+    border: 0;
+    border-bottom: 1px solid #272727;
+    outline: auto;text-align: center;
+    width: 23%;
+  }
+  .add-task-btn {
+    border-radius: 5px;
+    background: cornflowerblue;
+    cursor: pointer;
+    width: 10%;
+  }
+  .add-task-btn-top{
+    border-radius: 5px;
+    background: cornflowerblue;
+    cursor: pointer;
+  }
+  .task-list-header {
+    position: relative;
+    width: 100%;
+  }
+  .task-list-header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+  }
+  .remove-complete-btn {
+    position: absolute;
+    right: 5vw;
+    top: 16px;
+    border: 0;
+    background: 0;
+    color: #fff;
+    font-size: 0.5em;
+    cursor: pointer;
+    transition: color 150ms ease-in-out;
+    outline: none;
+  }
+  .remove-complete-btn:hover {
+    color: #272727;
+  }
+  .remove-complete-btn:active {
+    color: #ff652f;
+  }
+  .task-list-wrapper {
+    background: #fff;
+    color: #272727;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+  }
+  .task-list {
+    padding: 15px 25px 25px 25px;
+    width: 50%; 
+    overflow-y: scroll;
+    height: 500px;
+  }
+  .task-list li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #7474743b;
+
+  }
+  .task-list li:nth-child(odd) {
+    background-color: #747474;
+
+  }
+  /* To Ease Out On Hover of List*/
+  .task-list li:hover {
+    transform: scale(1.1);
+  }
+
+  .task-list input {
+    position: absolute;
+    opacity: 0;
+  }
+  .task-list label {
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  .task-list label:hover {
+    color: #747474;
+  }
+  .check-mark {
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    z-index: 1;
+  }
+  .test-css__autocomplete {
+    color: blue;
+  }
+.checked{
+  color: red;
+    text-decoration: line-through;
+}
+.contentDisplay{
+    display: block;
+}
+.customLabel{
+  margin-left: -381px;
+  position: absolute;
+}
+li span{
+  float: right;
+}
+.leftMargin{
+ margin-right: 20px;
+}
+.input3{
+  margin-right: -53px;
+}
+.input2{
+  margin-right: -15px;
+}
+.input1{
+  margin-left: 60px;
+}
+.space{
+  margin-left: 10px;
+  color: #272727;
+  font-weight: bolder;
+}
+@keyframes strike{
+  0%   { width : 0; }
+  100% { width: 100% }
+}
+.strike {
+  position: relative;
+  color: red;
+}
+.strike::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  height: 1px;
+  background: red;
+  animation-name: strike;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.textArea{
+  max-width: 234px;
+  max-height: 166px;
+  min-width: 234px;
+  min-height: 100px;
+}
+.two{
+  margin-left: 5px;
+}
+
+
